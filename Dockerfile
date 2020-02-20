@@ -41,7 +41,9 @@ RUN \
   && rm -rf /tmp/* \
   && pip install --no-cache-dir \
     'mkdocs-minify-plugin>=0.2' \
-    'mkdocs-git-revision-date-localized-plugin>=0.4'
+    'mkdocs-git-revision-date-localized-plugin>=0.4' \
+    'ipython==7.2.0' \
+    'mkdocs-jupyter==0.10.2'
 
 # Set working directory
 WORKDIR /docs
